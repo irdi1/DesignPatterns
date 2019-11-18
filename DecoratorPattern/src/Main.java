@@ -1,7 +1,8 @@
 public class Main {
 
     public static void main(String[] args){
-        Icecream icecream = new Icecream.honeyDecorator(new Icecream.NuttyDecorator(new Icecream.SimpleIcecream()));          System.out.println(icecream.makeIcecream());
+        Icecream icecream = new Icecream.honeyDecorator(new Icecream.NuttyDecorator(new Icecream.SimpleIcecream()));
+        System.out.println(icecream.makeIcecream());
         System.out.println("\n----------------------------");
 
         Shape circle = new Shape.Circle();
